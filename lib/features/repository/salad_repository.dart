@@ -13,7 +13,7 @@ class SaladRepository {
 
       final Map<String, dynamic> data = json.decode(response);
       final List<dynamic> products = data['products'];
-
+        
       return products.map((e) => Salad.fromJson(e)).toList();
     } catch (e) {
       throw Exception('repository salad fetch hatasi $e');
