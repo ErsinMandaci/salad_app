@@ -7,5 +7,4 @@ final locator = GetIt.instance;
 void getItSetup() {
   locator.registerLazySingleton(() => SaladService());
   locator.registerLazySingleton(() => SaladRepository());
-
 }

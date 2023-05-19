@@ -2,7 +2,7 @@ import 'package:equatable/equatable.dart';
 import 'package:flutter/widgets.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:fruit_app/features/models/salad.dart';
-import 'package:fruit_app/features/repository/salad_repository.dart';
+import 'package:fruit_app/features/services/salad_service.dart';
 import 'package:fruit_app/locator.dart';
 
 final fruitProvider =
@@ -13,7 +13,7 @@ final fruitProvider =
 class HomeProviderNotifier extends StateNotifier<HomeState> {
   HomeProviderNotifier() : super(const HomeState());
 
-  final SaladRepository _repository = locator<SaladRepository>();
+  final SaladService _service = locator<SaladService>();
   List<Salad> _listSalads = [];
   //List<Salad> _filteredSalads = [];
   final List<Salad> _basketList = [];
@@ -23,7 +23,7 @@ class HomeProviderNotifier extends StateNotifier<HomeState> {
 
   Future<void> fetchSalad() async {
     state = state.copyWith(isLoading: true);
-    final items = await _repository.getSalads();
+    final items = await _service.fetchSalads();
 
     _listSalads = items;
     state = state.copyWith(salad: items);
