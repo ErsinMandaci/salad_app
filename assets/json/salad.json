@@ -1,0 +1,93 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "Seasonal Salad",
+      "description": "A delicious vegetable salad made with lettuce, arugula, tomato, cucumber, onion, corn, olives, and olive oil.",
+      "price": 20,
+      "imageUrl": "https://png.pngtree.com/png-clipart/20190925/original/pngtree-salad-png-image_4992953.jpg",
+      "category": "Vegetable Salads"
+    },
+    {
+      "id": 2,
+      "name": "Tuna Salad",
+      "description": "A light and healthy salad made with lettuce, tuna, cucumber, tomato, mustard, olive oil, and lemon juice.",
+      "price": 30,
+      "imageUrl": "https://png.pngtree.com/png-clipart/20201209/original/pngtree-tuna-and-salmon-light-food-png-image_5639320.jpg",
+      "category": "Seafood Salads"
+    },
+    {
+      "id": 3,
+      "name": "Mediterranean Salad",
+      "description": "A delicious Mediterranean salad made with lettuce, tomato, cucumber, red onion, olives, cheese, and olive oil.",
+      "price": 25,
+      "imageUrl": "https://png.pngtree.com/png-clipart/20210314/original/pngtree-vegetable-salad-vector-floating-material-png-image_6086801.jpg",
+      "category": "Green Salads"
+    },
+    {
+      "id": 4,
+      "name": "Quinoa Salad",
+      "description": "A healthy and filling salad made with quinoa, chicken, avocado, tomato, cucumber, bell pepper, and lemon juice.",
+      "price": 35,
+      "imageUrl": "https://png.pngtree.com/png-vector/20210413/ourlarge/pngtree-nourishing-mutual-powder-photography-map-salad-png-image_3209023.jpg",
+      "category": "Protein-rich Salads"
+    },
+    {
+      "id": 5,
+      "name": "Walnut Broccoli Salad",
+      "description": "A delicious and nutritious salad made with broccoli, walnuts, red onion, raisins, and olive oil.",
+      "price": 22,
+      "imageUrl": "https://png.pngtree.com/png-vector/20210924/ourlarge/pngtree-gourmet-vegetable-salad-png-image_3943781.jpg",
+      "category": "Vegetable Salads"
+    },
+    {
+      "id": 6,
+      "name": "Walnut Broccoli Salad",
+      "description": "A delicious and nutritious salad made with broccoli, walnuts, red onion, raisins, and olive oil.",
+      "price": 22,
+      "imageUrl": "https://png.pngtree.com/png-vector/20210924/ourlarge/pngtree-gourmet-vegetable-salad-png-image_3943781.jpg",
+      "category": "Vegetable Salads"
+    },
+    {
+      "id": 7,
+      "name": "Walnut Broccoli Salad",
+      "description": "A delicious and nutritious salad made with broccoli, walnuts, red onion, raisins, and olive oil.",
+      "price": 22,
+      "imageUrl": "https://png.pngtree.com/png-vector/20210924/ourlarge/pngtree-gourmet-vegetable-salad-png-image_3943781.jpg",
+      "category": "Vegetable Salads"
+    },
+    {
+      "id": 8,
+      "name": "Walnut Broccoli Salad",
+      "description": "A delicious and nutritious salad made with broccoli, walnuts, red onion, raisins, and olive oil.",
+      "price": 22,
+      "imageUrl": "https://png.pngtree.com/png-vector/20210924/ourlarge/pngtree-gourmet-vegetable-salad-png-image_3943781.jpg",
+      "category": "Vegetable Salads"
+    },
+    {
+      "id": 9,
+      "name": "Walnut Broccoli Salad",
+      "description": "A delicious and nutritious salad made with broccoli, walnuts, red onion, raisins, and olive oil.",
+      "price": 22,
+      "imageUrl": "https://png.pngtree.com/png-vector/20210924/ourlarge/pngtree-gourmet-vegetable-salad-png-image_3943781.jpg",
+      "category": "Vegetable Salads"
+    },
+    {
+      "id": 10,
+      "name": "Walnut Broccoli Salad",
+      "description": "A delicious and nutritious salad made with broccoli, walnuts, red onion, raisins, and olive oil.",
+      "price": 22,
+      "imageUrl": "https://png.pngtree.com/png-vector/20210924/ourlarge/pngtree-gourmet-vegetable-salad-png-image_3943781.jpg",
+      "category": "Vegetable Salads"
+    },
+    {
+      "id": 11,
+      "name": "Walnut Broccoli Salad",
+      "description": "A delicious and nutritious salad made with broccoli, walnuts, red onion, raisins, and olive oil.",
+      "price": 22,
+      "imageUrl": "https://png.pngtree.com/png-vector/20210924/ourlarge/pngtree-gourmet-vegetable-salad-png-image_3943781.jpg",
+      "category": "Vegetable Salads"
+    }
+    
+  ]
+}
