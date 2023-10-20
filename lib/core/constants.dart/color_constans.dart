@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
-class ColorConstansts {
+@immutable
+final class ColorConstansts {
   const ColorConstansts._();
 
   static const Color sunShadeColor = Color(0xffFFA451);
