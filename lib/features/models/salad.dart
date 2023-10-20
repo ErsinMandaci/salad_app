@@ -1,14 +1,9 @@
 import 'package:equatable/equatable.dart';
+import 'package:flutter/material.dart';
 
-class Salad with EquatableMixin {
-  int? id;
-  String? name;
-  String? description;
-  int? price;
-  String? imageUrl;
-  String? category;
-
-  Salad({
+@immutable
+final class Salad extends Equatable {
+  const Salad({
     this.id,
     this.name,
     this.description,
@@ -17,6 +12,22 @@ class Salad with EquatableMixin {
     this.category,
   });
 
+  factory Salad.fromJson(Map<String, dynamic> json) {
+    return Salad(
+      id: json['id'] as int?,
+      name: json['name'] as String?,
+      description: json['description'] as String?,
+      price: json['price'] as int?,
+      imageUrl: json['imageUrl'] as String?,
+      category: json['category'] as String?,
+    );
+  }
+  final int? id;
+  final String? name;
+  final String? description;
+  final int? price;
+  final String? imageUrl;
+  final String? category;
   @override
   List<Object?> get props => [id, name, description, price, imageUrl, category];
 
@@ -47,16 +58,5 @@ class Salad with EquatableMixin {
       'imageUrl': imageUrl,
       'category': category,
     };
-  }
-
-  factory Salad.fromJson(Map<String, dynamic> json) {
-    return Salad(
-      id: json['id'] as int?,
-      name: json['name'] as String?,
-      description: json['description'] as String?,
-      price: json['price'] as int?,
-      imageUrl: json['imageUrl'] as String?,
-      category: json['category'] as String?,
-    );
   }
 }
