@@ -1,21 +1,21 @@
 import 'package:flutter/material.dart';
 import 'package:fruit_app/core/constants.dart/color_constans.dart';
 import 'package:fruit_app/core/constants.dart/string_constans.dart';
+import 'package:fruit_app/core/widgets/card_text.dart';
 import 'package:kartal/kartal.dart';
 
-import 'card_text.dart';
-
-class CardImage extends StatelessWidget {
-  final Function onPressed;
-  final String? imageName;
-  final String? saladPrice;
-  final String? saladName;
-  const CardImage(
-      {super.key,
-      required this.onPressed,
-      required this.imageName,
-      required this.saladPrice,
-      required this.saladName});
+final class CardImage extends StatelessWidget {
+  const CardImage({
+    required this.onPressed,
+    required this.imageUrl,
+    required this.saladPrice,
+    required this.saladName,
+    super.key,
+  });
+  final void Function()? onPressed;
+  final String imageUrl;
+  final String saladPrice;
+  final String saladName;
 
   @override
   Widget build(BuildContext context) {
@@ -40,7 +40,7 @@ class CardImage extends StatelessWidget {
             Expanded(
               child: Center(
                 child: Image.network(
-                  imageName ?? '',
+                  imageUrl,
                   width: context.dynamicWidth(0.4),
                   height: context.dynamicHeight(0.3),
                   fit: BoxFit.contain,
@@ -51,7 +51,7 @@ class CardImage extends StatelessWidget {
               height: 10,
             ),
             CardTextWidget(
-              itemValue: saladName ?? '',
+              itemValue: saladName,
             ),
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceAround,
@@ -59,13 +59,14 @@ class CardImage extends StatelessWidget {
                 Text(
                   '$saladPrice TL',
                   style: const TextStyle(
-                      color: ColorConstansts.sunShadeColor,
-                      fontSize: 14,
-                      fontWeight: FontWeight.w600,
-                      fontFamily: StringConstants.fontBrandonGrotesqueRegular),
+                    color: ColorConstansts.sunShadeColor,
+                    fontSize: 14,
+                    fontWeight: FontWeight.w600,
+                    fontFamily: StringConstants.fontBrandonGrotesqueRegular,
+                  ),
                 ),
                 IconButton(
-                  onPressed: () => onPressed(),
+                  onPressed: onPressed,
                   icon: const Icon(
                     Icons.add_circle_outlined,
                     color: ColorConstansts.sunShadeColor,

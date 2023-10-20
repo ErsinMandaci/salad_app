@@ -4,9 +4,8 @@ import 'package:kartal/kartal.dart';
 
 import '../constants.dart/string_constans.dart';
 
-class CardTextWidget extends StatelessWidget {
-  const CardTextWidget(
-      {super.key, required this.itemValue});
+final class CardTextWidget extends StatelessWidget {
+  const CardTextWidget({super.key, required this.itemValue});
 
   final String itemValue;
 
