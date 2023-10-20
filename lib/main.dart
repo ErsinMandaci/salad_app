@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:fruit_app/core/initialize/app_theme.dart';
-import 'package:fruit_app/features/view/welcome/welcome_view.dart';
+import 'package:fruit_app/features/view/view_welcome/welcome_view.dart';
 import 'package:fruit_app/locator.dart';
 
 void main(List<String> args) {
-  getItSetup();
+  GetItSetup().getItInitial();
   runApp(const ProviderScope(child: MyApp()));
 }
 
