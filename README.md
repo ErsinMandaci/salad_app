@@ -1,8 +1,5 @@
 # Salad App
-
-## Description
 A simple salad display and basket operation application.
-
 
 
 # Getting Started
