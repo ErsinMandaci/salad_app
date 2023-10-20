@@ -3,7 +3,7 @@ import 'package:kartal/kartal.dart';
 
 import '../constants.dart/color_constans.dart';
 
-class ImageContainer extends StatelessWidget {
+final class ImageContainer extends StatelessWidget {
   final String imageName;
   final String imageName2;
   final String imageName3;

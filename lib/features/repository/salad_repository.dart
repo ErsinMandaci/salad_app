@@ -1,22 +1,18 @@
 import 'dart:convert';
-
 import 'package:flutter/services.dart';
+import 'package:fruit_app/core/constants.dart/string_constans.dart';
+import 'package:fruit_app/features/models/salad.dart';
 
-import '../../core/constants.dart/string_constans.dart';
-import '../models/salad.dart';
-
-class SaladRepository {
+final class SaladRepository {
   Future<List<Salad>> fetchSaladsFromApi() async {
-    try {
-      final String response =
-          await rootBundle.loadString(StringConstants.baseUrl);
+    final response = await rootBundle.loadString(StringConstants.baseUrl);
+    final decodeData = json.decode(response);
 
-      final Map<String, dynamic> data = json.decode(response);
-      final List<dynamic> products = data['products'];
-        
-      return products.map((e) => Salad.fromJson(e)).toList();
-    } catch (e) {
-      throw Exception('repository salad fetch hatasi $e');
+    if (decodeData is Map<String, dynamic> && decodeData['products'] is List<dynamic>) {
+      final productsList = decodeData['products'] as List<dynamic>;
+      return productsList.map((product) => Salad.fromJson(product as Map<String, dynamic>)).toList();
+    } else {
+      throw Exception('repository salad fetch excetion : $response');
     }
   }
 }

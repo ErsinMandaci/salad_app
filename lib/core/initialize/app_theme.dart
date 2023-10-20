@@ -1,18 +1,20 @@
 import 'package:flutter/material.dart';
 import 'package:fruit_app/core/constants.dart/color_constans.dart';
 
-import '../constants.dart/string_constans.dart';
+import 'package:fruit_app/core/constants.dart/string_constans.dart';
 
-class AppTheme {
+@immutable
+final class AppTheme {
+  const AppTheme(this.context);
+
   final BuildContext context;
-
-  AppTheme(this.context);
 
   ThemeData get theme => ThemeData.light().copyWith(
         textTheme: const TextTheme(
-            bodyLarge: TextStyle(
-          fontFamily: StringConstants.fontBrandonGrotesqueRegular,
-        )),
+          bodyLarge: TextStyle(
+            fontFamily: StringConstants.fontBrandonGrotesqueRegular,
+          ),
+        ),
         appBarTheme: const AppBarTheme(
           elevation: 0,
           color: ColorConstansts.sunShadeColor,
@@ -25,19 +27,17 @@ class AppTheme {
               ),
             ),
             backgroundColor: const MaterialStatePropertyAll<Color>(
-                ColorConstansts.sunShadeColor),
-            foregroundColor:
-                const MaterialStatePropertyAll<Color>(Colors.white),
+              ColorConstansts.sunShadeColor,
+            ),
+            foregroundColor: const MaterialStatePropertyAll<Color>(Colors.white),
           ),
         ),
         inputDecorationTheme: const InputDecorationTheme(
           border: OutlineInputBorder(
-            borderSide: BorderSide(),
             borderRadius: BorderRadius.all(
               Radius.circular(15),
             ),
           ),
         ),
-      
       );
 }
